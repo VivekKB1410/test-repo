@@ -20,8 +20,8 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: "roost-controlplane"
-    externalDNS: false
+    domain: "roost-controlplane.10.10.0.10.nip.io"
+    externalDNS: true
     namespaceSubDomain: -jx.
     tls:
       email: ""
