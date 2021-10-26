@@ -10,6 +10,12 @@ spec:
     repositories:
     - name: test-repo
     scheduler: in-repo
+  - owner: VivekKB1410
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: test-repo
+    scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
