@@ -19,9 +19,16 @@ spec:
   - key: dev
   - key: staging
   - key: production
+  - gitKind: github
+    gitServer: https://github.com
+    key: test-repo
+    owner: VivekKB1410
+    promotionStrategy: Never
+    remoteCluster: true
+    repository: test-repo
   ingress:
-    domain: "roost-controlplane"
-    externalDNS: false
+    domain: roost-controlplane
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
